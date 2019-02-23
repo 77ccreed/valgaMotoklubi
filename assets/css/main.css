@@ -3804,6 +3804,18 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	/* Suusaklubi lehekülje taustapilt*/
+	 .suusaklubi {
+	 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	 		url("../../images/pexels-photo-416728.jpeg") !important;
+	 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	 		url("../../images/pexels-photo-416728.jpeg") !important;
+	 	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	 		url("../../images/pexels-photo-416728.jpeg") !important;
+	 	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	 		url("../../images/pexels-photo-416728.jpeg") !important;
+	 }
+
 		#main > header h2 {
 			font-size: 1.75em;
 			margin: 0 0 0.5em 0;
