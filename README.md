@@ -11,7 +11,7 @@
 * Google Analytics
 * Font Awesome ikoonid
 * jQuery 3.3.1
-* MTÜ Valga Motoklubi pildid
+* MTÜ Valga Motoklubi pildid ja tekst
 * Pexel.com pildid
 
 ### Lehekülje tegemisel kasutatud keeled
