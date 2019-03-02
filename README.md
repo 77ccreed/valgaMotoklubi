@@ -13,6 +13,7 @@
 * jQuery 3.3.1
 * MTÜ Valga Motoklubi pildid ja tekst
 * Pexel.com pildid
+* Fancybox https://fancyapps.com/fancybox/3/
 
 ### Lehekülje tegemisel kasutatud keeled
 
