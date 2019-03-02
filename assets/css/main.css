@@ -3394,8 +3394,7 @@ input, select, textarea {
 			height: 3em;
 			position: absolute;
 			right: 0;
-			top: 0;
-			vertical-align: middle;
+			top: 0;	
 			width: 7em;
 		}
 
