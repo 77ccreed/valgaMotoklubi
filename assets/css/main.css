@@ -74,7 +74,12 @@ input, select, textarea {
 
 .flag {
 	height: 16px;
-	width: 26px
+	width: 26px;
+}
+
+.video {
+height: 400px;
+width: 200%;
 }
 
 /* Basic */
