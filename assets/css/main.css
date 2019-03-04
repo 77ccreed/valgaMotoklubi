@@ -82,6 +82,9 @@ height: 400px;
 width: 200%;
 }
 
+.plakat {
+	max-height: 100vh;
+}
 /* Basic */
 
 	@-ms-viewport {
