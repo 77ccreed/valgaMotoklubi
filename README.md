@@ -15,7 +15,7 @@
 * Pexel.com pildid
 * Fancybox https://fancyapps.com/fancybox/3/
 
-### Lehekülje tegemisel kasutatud keeled
+### Lehekülje tegemisel kasutatud
 
 * HTML5
 * CSS3
