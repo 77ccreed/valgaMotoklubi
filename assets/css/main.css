@@ -88,13 +88,13 @@ width: 200%;
 	 display: block;
 	 margin-left: auto;
 	 margin-right: auto;	
-
 }
 
-.karuse {
-	background-image: url(/images/sponsorid/karuse_logo_2006_1.svg);
-	  height: 50px;
-	  width: 50px;
+.logo {
+	max-width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Basic */
