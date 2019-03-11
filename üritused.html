@@ -113,16 +113,16 @@
   <div class="box alt">
     <div class="row gtr-50 gtr-uniform">
 
-<iframe class="video" src="https://www.youtube.com/embed/KPlY7FonuDc">
+<iframe class="video" data-src="https://www.youtube.com/embed/KPlY7FonuDc">
       </iframe>
 
-<iframe class="video" src="https://www.youtube.com/embed/dNJmjZrVQyo">
+<iframe class="video" data-src="https://www.youtube.com/embed/dNJmjZrVQyo">
 </iframe>
 
-<iframe class="video" src="https://www.youtube.com/embed/X4yI8QwirVg">
+<iframe class="video" data-src="https://www.youtube.com/embed/X4yI8QwirVg">
 </iframe>
 
-<iframe class="video" src="https://www.youtube.com/embed/36wl8Ofq1dI">
+<iframe class="video" data-src="https://www.youtube.com/embed/36wl8Ofq1dI">
 </iframe>
 
     </div>
@@ -204,8 +204,15 @@
           imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
         }
       }
+    
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) { if(vidDefer[i].getAttribute('data-src')) {
+  vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src')); } }
     }
     window.onload = init;
+
+
+
   </script>
 
 </body>
