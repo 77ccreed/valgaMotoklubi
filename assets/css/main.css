@@ -90,6 +90,13 @@ width: 200%;
 	 margin-right: auto;	
 
 }
+
+.karuse {
+	background-image: url(/images/sponsorid/karuse_logo_2006_1.svg);
+	  height: 50px;
+	  width: 50px;
+}
+
 /* Basic */
 
 	@-ms-viewport {
