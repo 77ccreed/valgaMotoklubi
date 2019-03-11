@@ -41,10 +41,10 @@
             <a href="#menu" class="menuToggle"><span>Menüü</span></a>
             <div id="menu">
               <ul>
-<li><a href="/">Avaleht</a></li>
-<li><a href="üritused">Üritused</a></li>
-<li><a href="motoklubi">Motoklubi</a></li>
-<li><a href="suusaklubi">Suusakool</a></li>
+                <li><a href="/">Avaleht</a></li>
+                <li><a href="üritused">Üritused</a></li>
+                <li><a href="motoklubi">Motoklubi</a></li>
+                <li><a href="suusaklubi">Suusakool</a></li>
               </ul>
             </div>
           </li>
@@ -88,7 +88,7 @@
             <div class="box alt">
               <div class="row gtr-50 gtr-uniform">
 
-                <iframe class="video" src="https://www.youtube.com/embed/aRGZKU3sxUg">
+<iframe class="video" data-src="https://www.youtube.com/embed/aRGZKU3sxUg">
                 </iframe>
 
                 <div data-fancybox="gallery" class="col-12" href="images/motoklubi/LÕUNA-EESTI 1937.png"><span class="image fit">
@@ -348,11 +348,14 @@
   <script>
     function init() {
       var imgDefer = document.getElementsByTagName('img');
+var vidDefer = document.getElementsByTagName('iframe');
       for (var i = 0; i < imgDefer.length; i++) {
         if (imgDefer[i].getAttribute('data-src')) {
           imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
         }
       }
+for (var i = 0; i < vidDefer.length; i++) { if (vidDefer[i].getAttribute('data-src')) { vidDefer[i].setAttribute('src',
+  vidDefer[i].getAttribute('data-src')); } }
     }
     window.onload = init;
   </script>

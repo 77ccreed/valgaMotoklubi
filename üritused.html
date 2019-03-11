@@ -5,7 +5,7 @@
   <title>Valga Motoklubi üritused</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<meta name="description" content="Kestvuskrossi Eesti meistrivõistlused Vilaski krossirajal. Pealtvaatajatele tasuta!">
+  <meta name="description" content="Kestvuskrossi Eesti meistrivõistlused Vilaski krossirajal. Pealtvaatajatele tasuta!">
   <meta name="theme-color" content="#273038">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -58,8 +58,7 @@
       <section id="two" class="wrapper alt style2">
         <section class="spotlight">
           <div class="plakat" data-fancybox="gallery" href="images/plakat/tulemas/43828859_2123955914295254_3055946403076374528_n.jpg">
-            <img class="plakat" src="images/plakat/tulemas/43828859_2123955914295254_3055946403076374528_n.jpg"
-              alt="Mootorratturid võistlevad.">
+            <img class="plakat" src="images/plakat/tulemas/43828859_2123955914295254_3055946403076374528_n.jpg" alt="Mootorratturid võistlevad.">
           </div>
           <div class="content">
             <h2>VILASKI KESTVUSKROSS EESTI MV<br />
@@ -105,31 +104,28 @@
                   </span></div>
                 <div class="col-6"><span class="image fit logo">
                     <a href="http://www.repal.ee/" target="_blank" rel="noopener noreferrer"><img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                        data-src="images/sponsorid/Repal.jpg" alt="Repal logo"></a </span> </div> </div> </div> <hr/></section>
+                        data-src="images/sponsorid/Repal.jpg" alt="Repal logo"></a </span> </div> </div> </div> <hr />
+          </section>
 
-<section>
+          <section>
 
-  <h4>Varasemalt Vilaskis</h4>
-  <div class="box alt">
-    <div class="row gtr-50 gtr-uniform">
+            <h4>Varasemalt Vilaskis</h4>
+            <div class="box alt">
+              <div class="row gtr-50 gtr-uniform">
+                <iframe class="video" data-src="https://www.youtube.com/embed/KPlY7FonuDc">
+                </iframe>
+                <iframe class="video" data-src="https://www.youtube.com/embed/dNJmjZrVQyo">
+                </iframe>
+                <iframe class="video" data-src="https://www.youtube.com/embed/X4yI8QwirVg">
+                </iframe>
+                <iframe class="video" data-src="https://www.youtube.com/embed/36wl8Ofq1dI">
+                </iframe>
+              </div>
+            </div>
+          </section>
 
-<iframe class="video" data-src="https://www.youtube.com/embed/KPlY7FonuDc">
-      </iframe>
-
-<iframe class="video" data-src="https://www.youtube.com/embed/dNJmjZrVQyo">
-</iframe>
-
-<iframe class="video" data-src="https://www.youtube.com/embed/X4yI8QwirVg">
-</iframe>
-
-<iframe class="video" data-src="https://www.youtube.com/embed/36wl8Ofq1dI">
-</iframe>
-
-    </div>
-  </div>
-</section>
-
-                      </div> </section>
+        </div>
+      </section>
 
 
 
@@ -199,20 +195,19 @@
   <script>
     function init() {
       var imgDefer = document.getElementsByTagName('img');
+var vidDefer = document.getElementsByTagName('iframe');
       for (var i = 0; i < imgDefer.length; i++) {
         if (imgDefer[i].getAttribute('data-src')) {
           imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
         }
       }
-    
-var vidDefer = document.getElementsByTagName('iframe');
-for (var i=0; i<vidDefer.length; i++) { if(vidDefer[i].getAttribute('data-src')) {
-  vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src')); } }
+      for (var i = 0; i < vidDefer.length; i++) {
+        if (vidDefer[i].getAttribute('data-src')) {
+          vidDefer[i].setAttribute('src', vidDefer[i].getAttribute('data-src'));
+        }
+      }
     }
     window.onload = init;
-
-
-
   </script>
 
 </body>
