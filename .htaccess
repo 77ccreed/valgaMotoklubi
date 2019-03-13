@@ -1,10 +1,11 @@
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteCond %{REQUEST_URI} !^/\.well\-known/pki\-validation/
-RewriteRule ^(.*)$ https://www.valgamoto.ee/$1 [R=301,L]
-
 
 Options +FollowSymLinks
 RewriteEngine On
 RewriteCond %{THE_REQUEST} /index.html HTTP [NC]
 RewriteRule (.*)index.html$ /$1 [R=301,L]
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{REQUEST_URI} !^/\.well\-known/pki\-validation/
+RewriteRule ^(.*)$ https://www.valgamoto.ee/$1 [R=301,L]
+
