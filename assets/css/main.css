@@ -91,7 +91,14 @@ width: 200%;
 }
 
 .logo {
-	max-width: 70%;
+	max-width: 85%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bikeman {
+	max-width: 60%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
