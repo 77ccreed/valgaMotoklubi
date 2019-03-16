@@ -1,5 +1,15 @@
-
-Options +FollowSymLinks
 RewriteEngine On
-RewriteCond %{THE_REQUEST} /index.html HTTP [NC]
-RewriteRule (.*)index.html$ /$1 [R=301,L]
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://valgamoto.ee/$1 [L,R]
+
+#the code above will redirect the entire site into https without www unless the request come with https://www .      
+
+RewriteCond %{THE_REQUEST} \s/+(.*?/)?(?:index)?(.*?)\.html[\s?/] [NC]
+RewriteRule ^ /%1%2 [R=302,L,NE]
+
+#the code above will remove any .HTML.
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+ # you can use the two lines if file without extension not work and you want to map them to .html files and if you want to go the same file .html without extension keep it as it is . 
