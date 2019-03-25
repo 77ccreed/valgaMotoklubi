@@ -2556,7 +2556,7 @@ width: 200%;
      		background-color: #ed4933;
      		box-shadow: none !important;
 				 color: #ffffff !important;
-					 transition: background-color 0.9s;
+					 transition: background-color 1.3s;
 					 transition: color 1.3s;
      	}
 
@@ -2565,8 +2565,8 @@ width: 200%;
      	input[type="button"].primary:hover,
      	button.primary:hover,
      	.button.primary:hover {
-				 background-color: #FF9505 !important;
-				 color: #000000 !important;
+				 background-color: #D6D1B1 !important;
+				 color: #000 !important;
      	}
 
      	input[type="submit"].primary:active,
