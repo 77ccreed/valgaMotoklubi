@@ -161,12 +161,10 @@ input, select, textarea {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	background-color: #EAF8BF;
-
 }
 
 .flip-card .card-back {
-	background-color: #E8EDDF;
+
 }
 
 .flag {
