@@ -77,8 +77,8 @@ input, select, textarea {
 	display: block;
 	position: relative;
 	z-index: 1000;
-	width: 120px;
-	height: 120px;
+	width: 150px;
+	height: 150px;
 }
 
 .flip-card .card-front,
