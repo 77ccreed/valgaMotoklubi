@@ -163,8 +163,8 @@ input, select, textarea {
 	box-sizing: border-box;
 }
 
-.flip-card .card-back {
-
+.fb-post {
+  background: #fff;
 }
 
 .flag {
