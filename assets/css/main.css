@@ -163,10 +163,6 @@ input, select, textarea {
 	box-sizing: border-box;
 }
 
-.fb-post {
-  background: #fff;
-}
-
 .flag {
 	height: 16px;
 	width: 26px;
