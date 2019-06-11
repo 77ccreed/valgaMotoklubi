@@ -14,6 +14,13 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""></script>
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -32,9 +39,9 @@
 
 <body class="is-preload">
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/et_EE/sdk.js#xfbml=1&version=v3.3">
-</script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/et_EE/sdk.js#xfbml=1&version=v3.3">
+  </script>
 
   <div id="page-wrapper">
 
@@ -482,7 +489,7 @@
                 <p><a href="https://www.err.ee/936195/valga-voib-taas-saada-rahvusvaheliselt-tuntud-motokeskuseks"
                     target="_blank" rel="noopener noreferrer">Pikemalt ERR-is</a></p>
 
-                
+
                 <h5 class="col-12">Jaanikese krossirada on publikule hästi jälgitav ning mõnusate kurvide ja hüpetega
                   liivarada.</h5>
 
@@ -521,12 +528,14 @@
                     <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                       data-src="images/plakat/tulemas/IMG_0122.jpg" alt="Krossiraja vaade Jaanikeses.">
                   </span></div>
-                
+
 
               </span>
-                <p> <a href="images/pdf/Jaanikese-oru-motoajalugu-1960-2008a.pdf" target="_blank"
-                    rel="noopener noreferrer">Arved Priuhka ülevaade Jaanikese oru motoajaloost aastatel 1960 – 2007</a>
-                </p>
+              <div id="mapid"></div>
+              <hr>
+              <p> <a href="images/pdf/Jaanikese-oru-motoajalugu-1960-2008a.pdf" target="_blank"
+                  rel="noopener noreferrer">Arved Priuhka ülevaade Jaanikese oru motoajaloost aastatel 1960 – 2007</a>
+              </p>
             </div>
         </div>
       </section>
@@ -582,7 +591,6 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
-
 
   <script>
     function init() {
