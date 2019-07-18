@@ -2,18 +2,21 @@
 <html lang="et">
 
 <head>
-  <title>Valga Motoklubi MTÜ</title>
+  <title>Valga Motoklubi - ürituste ja treeningute korraldamine Valgas</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Motoklubi eesmärk on heategevuslik noorte ja täiskasvanute vaba aja sisustamine läbi motospordi. Korraldame üritusi ja treeninguid klubile kuuluval Vilaski krossirajal.">
+  <meta name="description" content="Korraldame üritusi Jaanikese motokompleksis ja võistluseid ning treeninguid klubile kuuluval Vilaski krossirajal Valga lähedal.">
   <meta name="theme-color" content="#273038">
-   <meta name="keywords" content="valga motoklubi mtü, Vilaski krossirada.">
+   <meta name="keywords" content="motoklubi, Vilaski, Jaanikese, motokompleks, mtü, krossirada">
    <meta name="author" content="Kiur Jullis">
  <link rel="canonical" href="https://valgamoto.ee/motoklubi">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+     crossorigin="" />
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -26,9 +29,14 @@
       },
       "email": "valgamoto@gmail.com",
       "name": "Valga Motoklubi MTÜ",
-      "telephone": "+(372) 503 0157"
+      "telephone": "+(372) 503 0157",
+      "sameAs":"https://www.facebook.com/valgamoto/"
     }
   </script>
+      <!-- Make sure you put this AFTER Leaflet's CSS -->
+      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -46,9 +54,6 @@
 </head>
 
 <body class="is-preload">
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/et_EE/sdk.js#xfbml=1&version=v3.3">
-</script>
 
   <div id="page-wrapper">
 
@@ -82,9 +87,16 @@
         <div class="inner">
 
           <section>
-            <h3>Vilaski krossirada</h3>
+            	<header>
+            	  <h4>Vilaski krossirada</h4>
+            	  <p>Motoklubil on Valgamaal Tsirguliina lähedal Vilaski krossirada.</p>
+            	</header>
             <p>
-              Motoklubil on Valgamaal Tsirguliina lähedal Vilaski krossirada. Omadustelt pehme ja liivane 2,1km pikk
+               <div data-fancybox="gallery" href="images/motoklubi/mark vilaski 18.jpg 1.jpg"><span
+                   class="image left"><img
+                     src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                     data-src="images/motoklubi/mark vilaski 18.jpg 1.jpg" alt="Vilaski krossirada."></span></div>
+              Omadustelt pehme ja liivane 2,1km pikk
               ning koos enduro
               lõikudega umbes 8,5km pikk. Stardikoridor on kaks-kolmsada meetrit pikk. Buldooseriga üle käidud rada on
               küllalt kiire -
@@ -99,9 +111,35 @@
               Tsirguliina-Sangaste poole, 1-1,5 km ja esimesest kruusateest keerata paremale, veel paar km ja rada jääb
               vasakule
               elektriliinide alla.</p>
-              <div class="fb-like" data-href="https://valgamoto.ee/motoklubi" data-width="" data-layout="button"
-                data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
             <hr />
+                  	<header>
+                  	  <h4>Jaanikese motokompleks</h4>
+                  	  <p>Korraldame motokrosse Jaanikese oru krossirajal.</p>
+                  	</header>
+                   <p>
+                     <div data-fancybox="gallery" href="images/plakat/tulemas/IMG_0119.jpg"><span
+                       class="image left"><img
+                           src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                           data-src="images/plakat/tulemas/IMG_0119.jpg" alt="Jaanikese krossirada."></span></div>
+                     Valga vallavolikogu on otsustanud eraomanikult tagasi osta Baltimaade parima rajaga Jaanikese
+                     motokompleksi - koos kohalike motoklubidega avatakse kümmekond aastat kasutuseta seisnud
+                     keskus jälle harjutamiseks ja võistlusteks.
+                   </p>
+                     <p><a href="https://www.err.ee/936195/valga-voib-taas-saada-rahvusvaheliselt-tuntud-motokeskuseks"
+                         target="_blank" rel="noopener noreferrer">Pikemalt ERR-is</p>
+                         <p></p>
+                   <p>Jaanikese krossirada on publikule hästi jälgitav ning mõnusate kurvide ja hüpetega liivarada.
+                    </p>
+                     <p><a
+                         href="https://tv.delfi.ee/live/sport/taispikkuses-euroopa-meistrivoistlused-motokrossis?id=86690723&fbclid=IwAR0UpEOYgb6jlUE68K42ylZ8t_B1RScrheMjVM1MTMqKMdUi7PXcuaXvzbU"
+                         target="_blank" rel="noopener noreferrer">Euroopa meistrivõistlused motokrossis Jaanikese krossirajal Valgas 29-30. juunil 2019. Täispikkuses järelevaatamine Delfi TV-s.</p>
+                     <p></p>
+                      <p> <a href="images/pdf/Jaanikese-oru-motoajalugu-1960-2008a.pdf" target="_blank"
+                          rel="noopener noreferrer">Arved Priuhka ülevaade Jaanikese oru motoajaloost aastatel 1960 –
+                          2007</a>
+                      </p>
+                      <div id="mapid"></div>
+                   <hr />
           </section>
 
 
@@ -109,8 +147,6 @@
             <h4>Motoklubi galerii</h4>
             <div class="box alt">
               <div class="row gtr-50 gtr-uniform">
-                <iframe class="video" data-src="https://www.youtube.com/embed/aRGZKU3sxUg">
-                </iframe>
                 <div data-fancybox="gallery" class="col-12" href="images/motoklubi/LÕUNA-EESTI 1937.png"><span class="image fit">
                   <figure>
                     <figcaption>Artikkel aastast 1937.</figcaption>
